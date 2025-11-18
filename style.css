@@ -1,3 +1,21 @@
 html{
     scroll-behavior: smooth;
 }
+body{
+    background-color: hsl(0, 76%, 23%);
+    color: white;
+}
+.light-mode{
+    background-color: hsl(0, 0%, 98%);
+    color: black;
+}
+body.light-mode a{
+    color: hsl(0, 100%, 41%);
+}
+a{
+    color: hsl(315, 84%, 88%);
+}
+
+@media screen and (max-width: 600px) {
+    
+}
