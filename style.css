@@ -27,14 +27,14 @@ button{
     border: white;
     transition: 0.2s;
 }
-.info img{
-    width: 500px;
-    padding: 0px 100px;
-}
 button:hover{
     background-color: rgb(244, 195, 195);
     color:  hsl(0, 8%, 43%);
     border:  hsl(0, 8%, 43%);
+}
+.info img{
+    width: 500px;
+    padding: 0px 100px;
 }
 .info p{
     margin-top: 20px;
@@ -58,6 +58,7 @@ button:hover{
 .show-menu a{
     color: black;
     white-space: nowrap;
+    display: block;
 }
 .menu:hover .show-menu{
     display: block;
@@ -68,9 +69,7 @@ button:hover{
 }
 header{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0.5rem;
 }
 
 #heimlich{
@@ -89,7 +88,7 @@ header{
 #hlr{
     margin-top: 20px;
     width: 1500px;
-    background-color: hsla(348, 47%, 36%, 0.363);
+    background-color: oklch(44.114% 0.11813 11.327 / 0.363);
     border-radius: 10px;
     font-size: 1.2em;
     padding: 20px;
@@ -135,6 +134,44 @@ footer{
 }
 
 
-@media screen and (max-width: 600px) {
-    
+@media screen and (max-width: 480px)
+{
+    .light-mode > div{
+        background-color: white;
+        color: black;
+    }
+    body.light-mode .info p{
+        background-color: white;
+        color: black;
+    }
+    .menu{
+        position: relative;
+        margin: 0px 0px 0px 20px;
+    }
+    .show-menu{
+        display: none;
+        position: absolute;
+        background-color: rgb(252, 201, 222);
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        padding: 12px 16px;
+    }
+    .show-menu a{
+        color: black;
+        white-space: nowrap;
+    }
+    .menu:checked .show-menu{
+        display: block;
+    }
+    .menu .show-menu{
+        align-items: right;
+        justify-content: right;
+    }
+    .info p{
+        width: 600px;
+        font-size: 35px;
+    }
+    #heimlich, #hlr, #blood, #medicin{ 
+        width: 700px;
+        font-size: 30px;
+    }
 }
