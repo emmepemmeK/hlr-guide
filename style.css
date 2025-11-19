@@ -91,54 +91,18 @@ div{
 }
 .section{
     width: 95%;
-}
-#heimlich{
     margin-top: 20px;
+    background-color: hsla(348, 47%, 36%, 0.363);
+    border-radius: 10px;
+    font-size: 1.2em;
+    padding: 20px;
+}
+.section > img{
+    display: flex;
+    padding: 0px 100px;
+    justify-content: space-around;
+}
 
-    background-color: hsla(348, 47%, 36%, 0.363);
-    border-radius: 10px;
-    font-size: 1.2em;
-    padding: 20px;
-}
-#heimlich img{
-    display: flex;
-    padding: 0px 100px;
-    justify-content: space-around;
-}
-#hlr{
-    margin-top: 20px;
-
-    background-color: hsla(348, 47%, 36%, 0.363);
-    border-radius: 10px;
-    font-size: 1.2em;
-    padding: 20px;
-}
-#hlr img{
-    display: flex;
-    padding: 0px 100px;
-    justify-content: space-around;
-}
-#blood{
-    margin-top: 20px;
- 
-    background-color: hsla(348, 47%, 36%, 0.363);
-    border-radius: 10px;
-    font-size: 1.2em;
-    padding: 20px;
-}
-#blood img{
-    display: flex;
-    padding: 0px 100px;
-    justify-content: space-around;
-}
-#medicin{
-    margin-top: 20px;
-    
-    background-color: hsla(348, 47%, 36%, 0.363);
-    border-radius: 10px;
-    font-size: 1.2em;
-    padding: 20px;
-}
 footer{
     display: flex;
     justify-content: space-between;
