@@ -48,6 +48,7 @@ button:hover{
 .info img{
     width: 500px;
     padding: 0px 100px;
+    margin-top: 20px;
 }
 .info p{
     margin: 20px 0 0 10px;
